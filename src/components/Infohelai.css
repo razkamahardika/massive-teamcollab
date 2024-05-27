@@ -1,0 +1,20 @@
+.information-helainusa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1093px;
+  height: 431px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.information-helainusa h1 {
+  font-size: 64px;
+  color: #1c1c1c;
+  margin: 0 110px 0 0;
+}
+
+.information-helainusa p {
+  font-size: 16px;
+  color: #1c1c1c;
+}
