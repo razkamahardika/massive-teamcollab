@@ -1,20 +1,17 @@
-import Header from './components/Header'
-import Banner from './components/Banner'
-import Infohelai from './components/Infohelai'
-import Story from './components/Story'
-import Bestseller from './components/Bestseller'
-import Footer from './components/Footer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import ProductPage from './pages/ProductPage'
 import './App.css'
 
 function App() {
   return (
     <>
-      <Header />
-      <Banner />
-      <Infohelai />
-      <Story />
-      <Bestseller />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/productpage" element={<ProductPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

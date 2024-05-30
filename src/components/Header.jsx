@@ -1,10 +1,9 @@
-
-import helaiLogo from '../images/logo.png'
-import searchIcon from '../images/search-icon.png'
-import userIcon from '../images/user-icon.png'
-import heartIcon from '../images/heart-icon.png'
-import cartIcon from '../images/cart-icon.png'
-import './Header.css'
+import helaiLogo from '/images/logo.png'
+import searchIcon from '/images/search-icon.png'
+import userIcon from '/images/user-icon.png'
+import heartIcon from '/images/heart-icon.png'
+import cartIcon from '/images/cart-icon.png'
+import '../assets/components/Header.css'
 
 const Header = () => {
     return (

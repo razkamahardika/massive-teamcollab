@@ -1,8 +1,8 @@
-import tiktokLogo from '../images/tiktok-icon.png'
-import instagramLogo from '../images/instagram-icon.png'
-import facebookLogo from '../images/facebook-icon.png'
-import whatsappLogo from '../images/whatsapp-icon.png'
-import './Footer.css'
+import tiktokLogo from '/images/tiktok-icon.png'
+import instagramLogo from '/images/instagram-icon.png'
+import facebookLogo from '/images/facebook-icon.png'
+import whatsappLogo from '/images/whatsapp-icon.png'
+import '../assets/components/Footer.css'
 
 const Footer = () => {
     return (

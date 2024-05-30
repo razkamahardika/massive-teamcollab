@@ -4,3 +4,9 @@
   font-family: "Poppins", sans-serif;
   color-scheme: #FAFCFE;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
