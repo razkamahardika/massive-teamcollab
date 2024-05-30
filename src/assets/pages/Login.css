@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.container .left-side {
+  background-color: #fff;
+  color: #8b0000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  color: #8b0000;
+}
+.welcome-text {
+  text-align: center;
+  color: black;
+}
+
+.welcome-text h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.container .right-side {
+  background-color: #8b0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.login-box {
+  background-color: white; /* Ganti warna latar belakang menjadi merah tua */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  font-size: 14px;
+}
+
+.input-group input[type="checkbox"] {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.input-group label a {
+  color: #ffff; /* Ganti warna teks menjadi putih */
+  text-decoration: none;
+}
+
+.next-login {
+  width: 100%;
+  padding: 10px;
+  background-color: #8b0000;
+  color: #fff;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.next-login:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.submit {
+  color: #666;
+  border-radius: 28px;
+  border: 1px solid #666;
+  padding: 10px 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,134 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Global Styles */
+  
+  .container {
+    display: flex;
+  }
+  
+  .left-side1,
+  .right-side1 {
+    flex: 1;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  /* Left Side Styles */
+  .left-side1 {
+    background-color: #8b0000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  /* Form Styles */
+  .form-container {
+    background-color: white; /* Ganti warna latar belakang menjadi merah tua */
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-container h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  .form-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+  }
+  
+  .form-group .privacy-policy {
+    color: #8b0000;
+    text-decoration: underline;
+  }
+  
+  /* Button Styles */
+  .next_login {
+    width: 100%;
+    padding: 10px;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  
+  /* Right Side Styles */
+  .right-side1 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .right-side1 h2 {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 50px;
+  }
+  
+  .right-side1 .submit {
+    color: #666;
+    border-radius: 28px;
+    border: 1px solid #666;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
