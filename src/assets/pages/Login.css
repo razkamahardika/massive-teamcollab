@@ -5,10 +5,6 @@
   align-items: flex-start;
   height: 100vh;
   background-color: white;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 .login-container {
@@ -48,9 +44,11 @@
   height: 50px;
   margin-right: 10px;
 }
+
 .login-left .brand h1 {
   color: #800000;
 }
+
 .login-left h2 {
   margin-bottom: 10px;
   font-size: 3.5rem;
@@ -106,7 +104,6 @@
 .input-group {
   margin-bottom: 10px;
   width: 100%;
-}
 
 .input-group label {
   display: block;
