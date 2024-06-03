@@ -1,49 +1,52 @@
+import React from "react";
 import "../assets/pages/Wishlist.css";
-import Header from "../components/Header";
+import Header from "../components/Header"; // Import the CSS file for styling
 
 const Wishlist = () => {
+  const products = [
+    {
+      id: 1,
+      name: "Product Name 1",
+      details: "Product Details",
+      price: "Rp. 1.000.000",
+      imageUrl: "../images/product1.png", // Update with actual image paths
+    },
+    {
+      id: 2,
+      name: "Product Name 2",
+      details: "Product Details",
+      price: "Rp. 2.000.000",
+      imageUrl: "../images/product1.png", // Update with actual image paths
+    },
+  ];
+
   return (
     <>
       <Header />
-      <section className="App">
-        <header className="App-header">
-          <h1>Wishlist</h1>
-        </header>
-        <main className="App-main">
-          <ProductCard
-            image="wishlist.png" // Replace with your image paths
-            details="Product Details"
-            price="Rp. 0.000.000"
-            name="Product Name"
-          />
-          <ProductCard
-            image="profile1.jpg" // Replace with your image paths
-            details="Product Details"
-            price="Rp. 0.000.000"
-            name="Product Name"
-          />
-        </main>
-        <footer className="App-footer">
-          <a href="#" className="whatsapp-link">
-            <img src="./landingpage/whatsapp-icon.png" alt="WhatsApp" />
-          </a>
-        </footer>
-      </section>
-    </>
-  );
-};
-
-const ProductCard = ({ image, details, price, name }) => {
-  return (
-    <>
-      <section className="product-card">
-        <img src={image} alt={name} />
-        <div className="product-info">
-          <p>{details}</p>
-          <p>{price}</p>
+      <div className="horizontal-line"></div>
+      <div className="wishlist">
+        <h1>Wishlist</h1>
+        <div className="products">
+          {products.map((product) => (
+            <div key={product.id} className="product">
+              <img src={product.imageUrl} alt={product.name} />
+              <div className="product-info">
+                <p>{product.details}</p>
+                <h2>{product.name}</h2>
+                <p>{product.price}</p>
+              </div>
+            </div>
+          ))}
         </div>
-        <h2>{name}</h2>
-      </section>
+        <a
+          href="https://wa.me/yourwhatsappnumber"
+          className="whatsapp-float"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../images/whatsapp-icon.png" alt="WhatsApp" />
+        </a>
+      </div>
     </>
   );
 };

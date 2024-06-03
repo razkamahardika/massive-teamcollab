@@ -1,44 +1,80 @@
-import "../assets/pages/Login.css";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "../assets/pages/Login.css";
+
+function App() {
+  return (
+    <div className="App">
+      <Login />
+    </div>
+  );
+}
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [agree, setAgree] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle login logic here
+    console.log("Email:", email);
+    console.log("Password:", password);
+    console.log("Agree to privacy policy:", agree);
+  };
+
   return (
-    <div className="container">
-      <div className="left-side">
-        <div className="logo">
-          <img src="logo-head.png" alt="HelaiNusa" />
+    <div className="login-container">
+      <div className="login-left">
+        <div className="brand">
+          <img src="/logo-head.png" alt="HelaiNusa Logo" className="logo" />
           <h1>HelaiNusa.</h1>
         </div>
-        <div className="welcome-text">
-          <h2>Login to Your Account</h2>
-          <button class="submit">
-            <Link to="/Signup">Don't have an account?</Link>
-          </button>
-        </div>
+        <h2>Login to Your Account</h2>
+        <Link to="/Signup">
+          <button className="signup-button">Don’t have an account?</button>
+        </Link>
       </div>
-      <div className="right-side">
-        <div className="login-box">
-          <h2>Login</h2>
-          <form>
+      <div className="login-right">
+        <div className="login-form-container">
+          <form onSubmit={handleSubmit}>
+            <h2>Login</h2>
             <div className="input-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
             </div>
             <div className="input-group">
               <label htmlFor="password">Password</label>
-              <input type="password" id="password" name="password" required />
+              <input
+                type="password"
+                id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
             </div>
-            <div className="input-group">
-              <input type="checkbox" id="privacy-policy" />
-              <label htmlFor="privacy-policy">
-                I agree to the
-                <span className="privacy-policy">privacy policy</span>
+            <div className="input-group checkbox-group">
+              <input
+                type="checkbox"
+                id="agree"
+                checked={agree}
+                onChange={(e) => setAgree(e.target.checked)}
+              />
+              <label htmlFor="agree">
+                I agree to the <a href="#">privacy policy</a>
               </label>
             </div>
-            <button class="next-login">
-              <Link to="/ProductPage">Login</Link>
-              <link rel="stylesheet" href="" />
-            </button>
+            <Link to="/ProductPage">
+              <button type="submit" className="login-button">
+                Login
+              </button>
+            </Link>
           </form>
         </div>
       </div>
