@@ -1,11 +1,11 @@
-import Header from '../components/Header'
+import HeaderHome from '../components/HeaderHome'
 import Footer from '../components/Footer'
 import '../assets/pages/Home.css'
 
 function Home() {
     return (
         <>
-            <Header />
+            <HeaderHome />
 
             <section class="banner">
                 <div class="banner-content">

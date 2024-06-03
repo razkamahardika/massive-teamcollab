@@ -5,7 +5,7 @@ import heartIcon from "/images/heart-icon.png";
 import cartIcon from "/images/cart-icon.png";
 import "../assets/components/Header.css";
 
-const Header = () => {
+const HeaderHome = () => {
   return (
     <header>
       <div class="top-bar">
@@ -43,12 +43,12 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#wishlist">
+              <a href="#Wishlist">
                 <img src={heartIcon} alt="Wishlist" />
               </a>
             </li>
             <li>
-              <a href="#cart">
+              <a href="#Cart">
                 <img src={cartIcon} alt="Cart" id="cart-icon" />
               </a>
             </li>
@@ -59,4 +59,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderHome;
