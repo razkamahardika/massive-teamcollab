@@ -11,12 +11,12 @@
   max-width: 1200px;
   margin: 50px auto 50px;
   align-items: flex-end;
-  position: relative; 
-  z-index: 10; 
+  position: relative;
+  z-index: 10;
 }
 
 .page-title {
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 400;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .filter-icon {
-  margin-left: 100px;
+  margin-left: 50px;
   transition: transform 0.3s ease;
 }
 
@@ -54,7 +54,7 @@
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 100% ;
+  width: 100%;
   position: absolute;
 }
 
@@ -127,8 +127,8 @@
   text-align: left;
 }
 
-.product-name {
-  font-size: 16px;
+.product-card .product-name {
+  font-size: 14px;
   font-weight: bold;
   margin: 5px 0;
 }

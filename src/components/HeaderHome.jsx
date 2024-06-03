@@ -5,7 +5,7 @@ import heartIcon from "/images/heart-icon.png";
 import cartIcon from "/images/cart-icon.png";
 import "../assets/components/Header.css";
 
-const Header = () => {
+const HeaderHome = () => {
   return (
     <header>
       <div class="top-bar">
@@ -24,7 +24,7 @@ const Header = () => {
         </nav>
 
         <div class="logo">
-          <a href="/ProductPage">
+          <a href="/home">
             <img src={helaiLogo} alt="HelaiNusa Logo" />
             <span class="logo-text">HelaiNusa.</span>
           </a>
@@ -38,17 +38,17 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="/Profile">
+              <a href="/Login">
                 <img src={userIcon} alt="Account" />
               </a>
             </li>
             <li>
-              <a href="/Wishlist">
+              <a href="#Wishlist">
                 <img src={heartIcon} alt="Wishlist" />
               </a>
             </li>
             <li>
-              <a href="/Cart">
+              <a href="#Cart">
                 <img src={cartIcon} alt="Cart" id="cart-icon" />
               </a>
             </li>
@@ -59,4 +59,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderHome;
